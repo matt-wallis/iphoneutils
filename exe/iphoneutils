@@ -1,3 +1,10 @@
 #!/usr/bin/env ruby
 
-require "iphoneutils"
+require "iphoneutils/cli"
+
+begin
+Iphoneutils::CLI.start(ARGV)
+rescue => e
+  puts e.message
+end
+
