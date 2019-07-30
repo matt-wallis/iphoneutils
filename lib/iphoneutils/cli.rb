@@ -6,6 +6,12 @@ module Iphoneutils
     class Copy < Thor
       desc "recordings SOURCE TARGET", "Copies recordings from iPhone"
       long_desc <<-LONGDESC
+      Copies .m4a files from the Recordings directory on the iPhone, and renames them using the name that was given in the Voice Memos app.
+      If then same name was given in the Voice Memos app to more than one recording, then the names of the copies will include a distinguishing number. e.g. 'My Recording.m4a', 'My Recording-1.m4a', and so on.
+     If the name given in the Voice Memos app includes the character '/', then it will be replaced by the character '-'.
+
+      The modification time of the copied file will be set to the time when the recording was created.
+
       EXAMPLE using idevicebackup2 and ideviceunback
       \x5-------
 
