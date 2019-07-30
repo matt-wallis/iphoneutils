@@ -9,6 +9,13 @@ I used bundler to create boiler plate for a gem with an executable:
 $ bundle gem --exe iphoneutils
 ```
 
+## Experimenting
+
+To fire up `irb` with the library loaded:
+```
+$ bin/console`
+```
+O
 ## Documents consulted
 During the development, I looked at these:
 
