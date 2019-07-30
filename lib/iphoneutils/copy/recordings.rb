@@ -51,9 +51,13 @@ module Iphoneutils
 	}
       end
       def copy_file(src, tgt, time, instance=0)
+	# It is possible for more than one .m4a file to have the same title
+	# set in the Voice Memos app.
+	# In the case, we add a distiguishing instance number to the target file name:
 	tgt = tgt.sub_ext("-#{instance}#{tgt.extname}") if instance != 0
-	#puts "copy_file: #{tgt}"
+
 	if File.exist?(tgt)
+	  # Here is the recursive call to walk through the instance numbers we've already used:
 	  copy_file(src, tgt, time, instance+1)
 	else
 	  puts "#{src} => #{tgt}"
