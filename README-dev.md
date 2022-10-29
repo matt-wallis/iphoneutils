@@ -15,7 +15,7 @@ To fire up `irb` with the library loaded:
 ```
 $ bin/console`
 ```
-O
+
 ## Documents consulted
 During the development, I looked at these:
 

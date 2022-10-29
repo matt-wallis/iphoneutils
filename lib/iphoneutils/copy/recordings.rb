@@ -1,4 +1,5 @@
 require 'plist'
+require 'pathname'
 require 'time'
 module Iphoneutils
   module Copy 
