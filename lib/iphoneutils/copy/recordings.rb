@@ -1,6 +1,7 @@
 require 'plist'
 require 'pathname'
 require 'time'
+require 'fileutils'
 module Iphoneutils
   module Copy 
     class << self # See https://stackoverflow.com/a/35012552/685715
